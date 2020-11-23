@@ -1,0 +1,30 @@
+*{
+    margin: 0%;
+    padding: 0%; 
+}
+body{
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  }
+nav{
+    background-color: #013A74;
+}
+#logo{
+    width: 50px;
+}
+.negrita{
+ color: black;
+    text-decoration: none!important;
+}
+
+
+  .oscuro{ 
+    background-color: #1f1f1f; 
+  }
+  #img1{
+
+    object-fit: cover;
+    
+    height: 470px;
+}

@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+
+        <title>NFL.com</title>
+</head>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary text-white">
+    <a class="navbar-brand" href="#"><img id="logo"
+            src="https://a4.espncdn.com/combiner/i?img=%2Fi%2Fespn%2Fmisc_logos%2F500%2Fnfl.png" alt=""></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item ">
+                <a class="nav-link font-weight-bold" href="index.html">Inicio</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link font-weight-bold" href="partidos.html">partidos</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link font-weight-bold" href="noticias.html">noticias</a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link font-weight-bold" href="cuenta.html">cuenta</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link font-weight-bold" href="saludo.html">saludo al servicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link font-weight-bold" href="#" id="date"> </a>
+            </li>
+        </ul>
+    </div>
+</nav>
+
+<br><br>
+<div class="container">
+    <button type="button" class="btn btn-dark" onclick="cambiarModo()">Oscuro / Claro</button>
+</div>
+<br><br>
+
+
+<div class="container">
+    <div class="card mb-3">
+        <img id="img1"
+            src="https://a4.espncdn.com/combiner/i?img=%2Fphoto%2F2020%2F1116%2Fr776617_1296x729_16%2D9.jpg&w=570&format=jpg"
+            class="card-img-top" alt="...">
+        <div class="card-body">
+            <h5 class="card-title">NFL: Conclusiones de las 32 franquicias a la Semana 10</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional
+                content. This content is a little bit longer.</p>
+            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+        </div>
+    </div>
+    <br>
+    <div class="card-deck">
+        <div class="card">
+            <iframe class="embed-responsive-item"
+                src="http://www.espn.com.mx/core/video/iframe?id=7752546&endcard=false" allowfullscreen
+                frameborder="0"></iframe>
+            <div class="card-body">
+                <h5 class="card-title">Rodgers intenta 'Lambeau Leap' después de anotar</h5>
+                <p class="card-text">Aaron Rodgers corre en un touchdown de 5 yardas y hace su versión del Lambeau Leap
+                    sin fanáticos en las gradas.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+        <div class="card">
+            <iframe class="embed-responsive-item"
+                src="http://www.espn.com.mx/core/video/iframe?id=7752546&endcard=false" allowfullscreen
+                frameborder="0"></iframe>
+            <div class="card-body">
+                <h5 class="card-title">Rodgers intenta 'Lambeau Leap' después de anotar</h5>
+                <p class="card-text">Aaron Rodgers corre en un touchdown de 5 yardas y hace su versión del Lambeau Leap
+                    sin fanáticos en las gradas.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+        <div class="card">
+            <iframe class="embed-responsive-item"
+                src="http://www.espn.com.mx/core/video/iframe?id=7752546&endcard=false" allowfullscreen
+                frameborder="0"></iframe>
+            <div class="card-body">
+                <h5 class="card-title">Rodgers intenta 'Lambeau Leap' después de anotar</h5>
+                <p class="card-text">Aaron Rodgers corre en un touchdown de 5 yardas y hace su versión del Lambeau Leap
+                    sin fanáticos en las gradas.</p>
+                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<br><br>
+<script>
+    window.onload = function () {
+        alert("NFL te da la bienvenida ");
+    }
+</script>
+<script>
+    function cambiarModo() {
+        var cuerpoweb = document.body;
+        cuerpoweb.classList.toggle("oscuro");
+    } 
+</script>
+
+<script>function time() {
+        var d = new Date();
+        var hours = ("0" + d.getHours()).slice(-2);
+        var mins = ("0" + d.getMinutes()).slice(-2);
+        var secs = ("0" + d.getSeconds()).slice(-2);
+        var hora = document.getElementById("date");
+        hora.innerHTML = " " + hours + ":" + mins + ":" + secs;
+        //console.log(hours+":"+mins+":"+secs);
+    } setInterval(time, 1000);
+
+    //Funcion para Cambiar el color del texto de los parrafos de la pagina
+    var text = document.getElementById("text");
+    function color() {
+        var color = prompt("Ingrese el color de Fuente para el texto");
+        text.style.color = color;
+
+    }
+</script>
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>
